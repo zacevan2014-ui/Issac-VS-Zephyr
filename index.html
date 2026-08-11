@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming & Media Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    
+    <!-- Header -->
+    <header class="header">
+      <h1 class="dashboard-title">TACTICAL MEDIA HUB</h1>
+      <p class="subtitle">Video Showcase & Player Dossiers</p>
+    </header>
+
+    <!-- Video Showcase Section -->
+    <section class="card video-card">
+      <h2 class="section-heading">Featured Highlight</h2>
+      
+      <!-- Video Player Embed -->
+      <div class="video-container">
+        <iframe 
+          id="main-video"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="Featured Video" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Video Playlist & Links -->
+      <div class="video-playlist">
+        <h3>Video Directory</h3>
+        <div class="video-links-grid">
+          <div class="video-item active" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <div class="video-info">
+              <span class="video-title">Main Edit / Montage #1</span>
+              <span class="video-desc">Frame-by-frame breakdown and main highlights.</span>
+            </div>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener" class="external-link">Open Link ↗</a>
+          </div>
+
+          <div class="video-item" data-src="https://www.youtube.com/embed/3JZ_D3ELwOQ">
+            <div class="video-info">
+              <span class="video-title">Match Reel #2</span>
+              <span class="video-desc">High-speed combat sequences and clutch plays.</span>
+            </div>
+            <a href="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" target="_blank" rel="noopener" class="external-link">Open Link ↗</a>
+          </div>
+
+          <div class="video-item" data-src="https://www.youtube.com/embed/L_LUpnjgPso">
+            <div class="video-info">
+              <span class="video-title">Tactical Breakdown</span>
+              <span class="video-desc">Detailed strategy guide and skill tree analysis.</span>
+            </div>
+            <a href="https://www.youtube.com/watch?v=L_LUpnjgPso" target="_blank" rel="noopener" class="external-link">Open Link ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Combat Dossier Section -->
+    <section class="card dossier-card">
+      <div class="dossier-header">
+        <div>
+          <span class="badge">TACTICAL PROFILE</span>
+          <h2 id="dossier-name">Player: Player One</h2>
+          <p class="dossier-role" id="dossier-role">Class: Vanguard / Duelist</p>
+        </div>
+        <div class="dossier-tabs">
+          <button class="tab-btn active" data-player="player1">Player 1</button>
+          <button class="tab-btn" data-player="player2">Player 2</button>
+        </div>
+      </div>
+
+      <div class="dossier-body">
+        
+        <!-- Attributes Breakdown -->
+        <div class="attributes-group">
+          <h3>Attributes Breakdown</h3>
+          
+          <div class="attr-bar">
+            <div class="attr-info">
+              <span>Health / Resilience</span>
+              <span id="hp-val">88/100</span>
+            </div>
+            <div class="bar-bg"><div class="bar-fill" id="hp-bar" style="width: 88%;"></div></div>
+          </div>
+
+          <div class="attr-bar">
+            <div class="attr-info">
+              <span>Agility & Reaction Speed</span>
+              <span id="speed-val">95/100</span>
+            </div>
+            <div class="bar-bg"><div class="bar-fill" id="speed-bar" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="attr-bar">
+            <div class="attr-info">
+              <span>Combat Intelligence</span>
+              <span id="intel-val">91/100</span>
+            </div>
+            <div class="bar-bg"><div class="bar-fill" id="intel-bar" style="width: 91%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Special Mechanics -->
+        <div class="dossier-details">
+          <h3>Special Mechanics</h3>
+          <div class="detail-box">
+            <strong>Domain Expansion:</strong>
+            <p id="domain-text">Temporal Overdrive - Freezes enemy frame timing within 15m radius for 3 seconds.</p>
+          </div>
+          <div class="detail-box">
+            <strong>Frame-By-Frame Match Intel:</strong>
+            <p id="intel-text">Optimal punish windows on frame 4 startup. High mastery of fast recoil reset routines.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
