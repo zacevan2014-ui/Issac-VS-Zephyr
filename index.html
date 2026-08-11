@@ -3,121 +3,246 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaming & Media Dashboard</title>
+  <title>Definitive Archival Dossier: Issac vs Zephyr</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <div class="dashboard-container">
     
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="header">
-      <h1 class="dashboard-title">TACTICAL MEDIA HUB</h1>
-      <p class="subtitle">Video Showcase & Player Dossiers</p>
+      <div class="badge-title">ARCHIVAL SYSTEM V3.0</div>
+      <h1 class="dashboard-title">ISSAC VS ZEPHYR</h1>
+      <p class="subtitle">Definitive Combat Dossier & Battle Saga Engine</p>
     </header>
 
-    <!-- Video Showcase Section -->
+    <!-- SECTION 1: VIDEO SHOWCASE -->
     <section class="card video-card">
-      <h2 class="section-heading">Featured Highlight</h2>
+      <h2 class="section-heading"><span class="icon">►</span> FEATURED MATCH ANALYSIS</h2>
       
-      <!-- Video Player Embed -->
       <div class="video-container">
         <iframe 
           id="main-video"
           src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-          title="Featured Video" 
+          title="Match Highlights" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
         </iframe>
       </div>
 
-      <!-- Video Playlist & Links -->
       <div class="video-playlist">
-        <h3>Video Directory</h3>
+        <h3>VIDEO DIRECTORY</h3>
         <div class="video-links-grid">
+          
           <div class="video-item active" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
             <div class="video-info">
-              <span class="video-title">Main Edit / Montage #1</span>
-              <span class="video-desc">Frame-by-frame breakdown and main highlights.</span>
+              <span class="video-title">Part 1: Long-Range Blitz & Ranged Pressure</span>
+              <span class="video-desc">Issac utilizes room geometry and Nerf suppression to establish early lead.</span>
             </div>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener" class="external-link">Open Link ↗</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener" class="external-link">Open ↗</a>
           </div>
 
           <div class="video-item" data-src="https://www.youtube.com/embed/3JZ_D3ELwOQ">
             <div class="video-info">
-              <span class="video-title">Match Reel #2</span>
-              <span class="video-desc">High-speed combat sequences and clutch plays.</span>
+              <span class="video-title">Part 2: CQC & Hallway Grapple Exchange</span>
+              <span class="video-desc">Zephyr corners Issac in narrow corridors using wall-pins and grapples.</span>
             </div>
-            <a href="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" target="_blank" rel="noopener" class="external-link">Open Link ↗</a>
+            <a href="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" target="_blank" rel="noopener" class="external-link">Open ↗</a>
           </div>
 
           <div class="video-item" data-src="https://www.youtube.com/embed/L_LUpnjgPso">
             <div class="video-info">
-              <span class="video-title">Tactical Breakdown</span>
-              <span class="video-desc">Detailed strategy guide and skill tree analysis.</span>
+              <span class="video-title">Part 3: The Climax & Domain Expansion Clash</span>
+              <span class="video-desc">Verdant Horizon vs Malevolent Abyss simultaneous domain collision.</span>
             </div>
-            <a href="https://www.youtube.com/watch?v=L_LUpnjgPso" target="_blank" rel="noopener" class="external-link">Open Link ↗</a>
+            <a href="https://www.youtube.com/watch?v=L_LUpnjgPso" target="_blank" rel="noopener" class="external-link">Open ↗</a>
           </div>
+
+          <div class="video-item" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <div class="video-info">
+              <span class="video-title">Part 4: Finale & Overdrive Finishing Strike</span>
+              <span class="video-desc">Burnout state CQC trade leading to Zephyr's decisive Overdrive impact.</span>
+            </div>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener" class="external-link">Open ↗</a>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Combat Dossier Section -->
+    <!-- SECTION 2: CHARACTER ENGINE & DOSSIER -->
     <section class="card dossier-card">
       <div class="dossier-header">
         <div>
-          <span class="badge">TACTICAL PROFILE</span>
-          <h2 id="dossier-name">Player: Player One</h2>
-          <p class="dossier-role" id="dossier-role">Class: Vanguard / Duelist</p>
+          <span class="badge" id="dossier-tag">TACTICAL PROFILE: ZEPHYR</span>
+          <h2 id="dossier-name">Zephyr (The Apex Colossus)</h2>
+          <p class="dossier-role" id="dossier-style">Style: Power-focused, close-quarters brawler, high endurance</p>
         </div>
         <div class="dossier-tabs">
-          <button class="tab-btn active" data-player="player1">Player 1</button>
-          <button class="tab-btn" data-player="player2">Player 2</button>
+          <button class="tab-btn active" data-player="zephyr">Zephyr</button>
+          <button class="tab-btn" data-player="issac">Issac</button>
         </div>
       </div>
 
       <div class="dossier-body">
         
-        <!-- Attributes Breakdown -->
+        <!-- Numerical Engine Stats -->
         <div class="attributes-group">
-          <h3>Attributes Breakdown</h3>
+          <h3>Numerical Character Engine</h3>
           
-          <div class="attr-bar">
-            <div class="attr-info">
-              <span>Health / Resilience</span>
-              <span id="hp-val">88/100</span>
-            </div>
-            <div class="bar-bg"><div class="bar-fill" id="hp-bar" style="width: 88%;"></div></div>
-          </div>
+          <div class="stat-row"><span class="stat-name">HP (Health)</span><span class="stat-val" id="hp-text">2,900 / 2,900 (3,850 Max)</span></div>
+          <div class="attr-bar"><div class="bar-fill" id="hp-bar" style="width: 92%;"></div></div>
 
-          <div class="attr-bar">
-            <div class="attr-info">
-              <span>Agility & Reaction Speed</span>
-              <span id="speed-val">95/100</span>
-            </div>
-            <div class="bar-bg"><div class="bar-fill" id="speed-bar" style="width: 95%;"></div></div>
-          </div>
+          <div class="stat-row"><span class="stat-name">MP (Cursed Energy)</span><span class="stat-val" id="mp-text">2,200 MP (2,900 Max)</span></div>
+          <div class="attr-bar"><div class="bar-fill" id="mp-bar" style="width: 85%;"></div></div>
 
-          <div class="attr-bar">
-            <div class="attr-info">
-              <span>Combat Intelligence</span>
-              <span id="intel-val">91/100</span>
-            </div>
-            <div class="bar-bg"><div class="bar-fill" id="intel-bar" style="width: 91%;"></div></div>
+          <div class="stat-row"><span class="stat-name">Physical ATK</span><span class="stat-val" id="atk-text">240 (510 Max)</span></div>
+          <div class="attr-bar"><div class="bar-fill" id="atk-bar" style="width: 95%;"></div></div>
+
+          <div class="stat-row"><span class="stat-name">Armor DEF</span><span class="stat-val" id="def-text">195 (380 Max)</span></div>
+          <div class="attr-bar"><div class="bar-fill" id="def-bar" style="width: 92%;"></div></div>
+
+          <div class="stat-row"><span class="stat-name">Agility (AGI)</span><span class="stat-val" id="agi-text">140 (210 Max)</span></div>
+          <div class="attr-bar"><div class="bar-fill" id="agi-bar" style="width: 86%;"></div></div>
+
+          <div class="stat-row"><span class="stat-name">Combat IQ (INT)</span><span class="stat-val" id="int-text">175 (200 Max)</span></div>
+          <div class="attr-bar"><div class="bar-fill" id="int-bar" style="width: 88%;"></div></div>
+        </div>
+
+        <!-- Mechanics Breakdown -->
+        <div class="dossier-details">
+          <h3>Highlights & Mechanics</h3>
+          <div class="detail-box">
+            <strong>Signature Move:</strong>
+            <p id="sig-move">Charged Overdrive Finishing Blow</p>
+          </div>
+          <div class="detail-box">
+            <strong>Special Aura Output:</strong>
+            <p id="aura-text">94 / 100 - Maximum power charge unlocking movie finishing strike.</p>
+          </div>
+          <div class="detail-box">
+            <strong>Combat Dynamics:</strong>
+            <p id="tactics-text">Devastating point-blank strikes; high knockout potential. Possesses super armor poise rating of 92/100.</p>
           </div>
         </div>
 
-        <!-- Special Mechanics -->
-        <div class="dossier-details">
-          <h3>Special Mechanics</h3>
-          <div class="detail-box">
-            <strong>Domain Expansion:</strong>
-            <p id="domain-text">Temporal Overdrive - Freezes enemy frame timing within 15m radius for 3 seconds.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FRAME DATA ARCHITECTURE -->
+    <section class="card frame-card">
+      <h2 class="section-heading"><span class="icon">⚡</span> FIGHTING GAME FRAME DATA</h2>
+      <div class="table-wrapper">
+        <table class="frame-table" id="frame-table">
+          <thead>
+            <tr>
+              <th>Move Name</th>
+              <th>Input</th>
+              <th>Startup</th>
+              <th>Active</th>
+              <th>Recovery</th>
+              <th>On-Block</th>
+              <th>Damage</th>
+            </tr>
+          </thead>
+          <tbody id="frame-tbody">
+            <!-- Dynamically populated via JS based on selected tab -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MASTER SKILL TREES -->
+    <section class="card skill-card">
+      <h2 class="section-heading"><span class="icon">🌿</span> MASTER ABILITY TREE & ULTIMATE</h2>
+      <div class="skill-tree-container">
+        
+        <div class="tree-branch">
+          <h3 id="branch1-title">POISE BRANCH</h3>
+          <div class="tree-node">
+            <span class="node-rank">Rank I</span>
+            <strong id="node1-name">Iron Will</strong>
+            <p id="node1-desc">Gains up to 30% DEF as HP decreases.</p>
           </div>
-          <div class="detail-box">
-            <strong>Frame-By-Frame Match Intel:</strong>
-            <p id="intel-text">Optimal punish windows on frame 4 startup. High mastery of fast recoil reset routines.</p>
+          <div class="tree-node">
+            <span class="node-rank">Rank II</span>
+            <strong id="node2-name">Unyielding Stance</strong>
+            <p id="node2-desc">Immune to light-hit stagger and soft knockdowns.</p>
+          </div>
+          <div class="tree-node">
+            <span class="node-rank">Rank III</span>
+            <strong id="node3-name">Hyper-Armor Overdrive</strong>
+            <p id="node3-desc">Final 30s grants complete crowd-control immunity.</p>
+          </div>
+        </div>
+
+        <div class="tree-branch">
+          <h3 id="branch2-title">CRUSHING POWER</h3>
+          <div class="tree-node">
+            <span class="node-rank">Rank I</span>
+            <strong id="node4-name">Heavy Palm Strike</strong>
+            <p id="node4-desc">Pushes target back 6 feet on hit or block.</p>
+          </div>
+          <div class="tree-node">
+            <span class="node-rank">Rank II</span>
+            <strong id="node5-name">Ground Wall-Pin</strong>
+            <p id="node5-desc">Pins target against walls for guaranteed follow-up hits.</p>
+          </div>
+          <div class="tree-node">
+            <span class="node-rank">Rank III</span>
+            <strong id="node6-name">Titan Counter</strong>
+            <p id="node6-desc">Converts absorbed damage into 2× counter-power.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ultimate-box">
+        <span class="ult-label">DOMAIN EXPANSION / ULTIMATE</span>
+        <h3 id="ult-title">MALEVOLENT ABYSS</h3>
+        <p id="ult-desc">Pressure-type barrier expanding at 35.0 m/s. Grants absolute armor-piercing condition and gravity compression.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 5: DOMAIN CLASH TIMELINE -->
+    <section class="card timeline-card">
+      <h2 class="section-heading"><span class="icon">⏱</span> DOMAIN CLASH LOG (PART 3)</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <span class="time-stamp">0.00s</span>
+          <div class="timeline-content">
+            <strong>Simultaneous Hand Seals</strong>
+            <p>Issac launches <em>Verdant Horizon</em> vs. Zephyr launches <em>Malevolent Abyss</em> in central arena.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="time-stamp">0.18s - 0.25s</span>
+          <div class="timeline-content">
+            <strong>Barrier Expansion</strong>
+            <p>Issac's spatial aura expands at 42.0 m/s; Zephyr's crimson pressure barrier expands at 35.0 m/s.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="time-stamp">0.35s</span>
+          <div class="timeline-content">
+            <strong>Pressure Collision</strong>
+            <p>Energy fracture plane forms. Equal output (14,500 Volts/Cursed Index) cancels out sure-hit conditions inside neutral zone.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="time-stamp">1.20s - 2.10s</span>
+          <div class="timeline-content">
+            <strong>Overlay & Neutral Void Collapse</strong>
+            <p>Issac delivers 18 rapid strikes in 0.5s; Zephyr absorbs via Iron Will. Barrier shatters, depleting both MP pools to 0.</p>
           </div>
         </div>
 
